@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -6,57 +7,71 @@
 <title>Virus Store</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#111;
-    color:#fff;
+background:#0d1117;
+color:white;
 }
 
 header{
-    background:#00b894;
-    padding:20px;
-    text-align:center;
+background:#161b22;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:#00ff99;
 }
 
 .games{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:30px;
 }
 
 .card{
-    background:#222;
-    width:250px;
-    border-radius:10px;
-    overflow:hidden;
-    text-align:center;
+background:#1f2937;
+border-radius:10px;
+overflow:hidden;
+text-align:center;
+padding-bottom:15px;
 }
 
 .card img{
-    width:100%;
+width:100%;
+height:150px;
+object-fit:cover;
 }
 
 .card h2{
-    margin:10px 0;
+margin:15px 0 10px;
 }
 
 .price{
-    color:#00ff99;
-    font-size:22px;
+color:#00ff99;
+font-size:22px;
+margin-bottom:10px;
 }
 
 button{
-    background:#00b894;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    margin:15px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
+background:#00b894;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#009f7f;
 }
 </style>
 </head>
@@ -65,33 +80,33 @@ button{
 
 <header>
 <h1>🎮 Virus Store</h1>
-<p>بيع ألعاب Steam الأصلية بالجنيه المصري</p>
+<p>شراء ألعاب Steam الأصلية بالجنيه المصري</p>
 </header>
 
-<div class="games">
+<section class="games">
 
 <div class="card">
-<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="CS2">
-<h2>Counter-Strike 2</h2>
-<p class="price">اطلب السعر</p>
-<button>اطلب الآن</button>
-</div>
-
-<div class="card">
-<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg" alt="Dota 2">
-<h2>Dota 2</h2>
-<p class="price">اطلب السعر</p>
-<button>اطلب الآن</button>
-</div>
-
-<div class="card">
-<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg">
 <h2>Cyberpunk 2077</h2>
 <p class="price">1200 جنيه</p>
 <button>اطلب الآن</button>
 </div>
 
+<div class="card">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg">
+<h2>GTA V</h2>
+<p class="price">900 جنيه</p>
+<button>اطلب الآن</button>
 </div>
+
+<div class="card">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg">
+<h2>Apex Legends</h2>
+<p class="price">مجانية</p>
+<button>احصل عليها</button>
+</div>
+
+</section>
 
 </body>
 </html>
